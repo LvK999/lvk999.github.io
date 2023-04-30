@@ -113,11 +113,20 @@ section>h1 {
     text-align: justify;
 }
 
-@media (max-width: 600px) {
-    .album {
+@media (max-width: 600px){
+    .text-head>.album {
         display: none;
     }
-    .album-next {
+    .text-head>.album-next {
+        display: none;
+    }
+    .text-head>.text {
+        grid-column: 1/4;
+    }
+    .album>img {
+        display: none;
+    }
+    .album-next>img {
         display: none;
     }
 }
