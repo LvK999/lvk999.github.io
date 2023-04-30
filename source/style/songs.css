@@ -112,3 +112,12 @@ section>h1 {
 .phrases {
     text-align: justify;
 }
+
+@media (max-width: 600px) {
+    .album {
+        display: none;
+    }
+    .album-next {
+        display: none;
+    }
+}
