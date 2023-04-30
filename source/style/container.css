@@ -1,0 +1,122 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+body {
+    font-family: Caveat, serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: rgba(245, 245, 220, 0.7);
+}
+
+.main-text {
+    grid-column: 1/2;
+    font-size: 26px;
+    align-items: center;
+    display: block;
+    background-color: rgba(245, 245, 220, 0.8);
+    font-style: inherit;
+}
+
+.main-text a {
+    text-decoration: dotted;
+    color: red;
+}
+
+.main-text h1{
+    text-align: center;
+}
+
+.main-text p {
+    text-align: justify;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+.column {
+    grid-column: 2/3;
+    background-color: rgba(245, 245, 220, 0.6);
+    display: block;
+    align-items: center;
+}
+
+.column p,
+.column h2{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.column p,
+.column h2 {
+    text-align: center;
+}
+.column a {
+    color: blueviolet;
+    text-decoration: none;
+    text-decoration-line: underline;
+}
+
+.informa {
+    display: flex;
+    background-color: black;
+    /* background: linear-gradient(360deg, #000 60%, rgba(245, 245, 220) 100%); */
+    /* border-style: solid;
+    border-color: blanchedalmond; */
+    color: antiquewhite;
+    justify-content: space-between;
+}
+
+.creator {
+    margin: 10px;
+}
+
+.creator p {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+.creator h1,
+.creator h2{
+    text-align: center;
+}
+
+.logo {
+    width: 128px;   
+}
+
+.logo img {
+    width: 100%;
+}
+
+.wrong-shift {
+    margin: 15px;
+}
+
+.wrong-shift {
+    font-size: 24px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .informa {
+        flex-direction: column;
+        justify-content: center;
+    }
+     .logo {
+        display: none;
+     }
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 3fr 1fr;
+    }
+    .main-text
+    {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .column {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+}
